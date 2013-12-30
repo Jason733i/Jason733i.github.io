@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jasonBerrygithubioApp', [
+angular.module('myApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
