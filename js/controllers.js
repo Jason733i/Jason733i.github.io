@@ -6,12 +6,15 @@ angular.module('myApp.controllers', []).
         $scope.welcome = "Welcome to My Website!";
         $scope.currentYear = (new Date()).getFullYear();
     }).
-    controller('HomeController', function($scope) {
+    controller('HomeController', function() {
 
     }).
-    controller('BlogController', function($scope) {
+    controller('BlogController', function() {
 
     }).
-    controller('BioController', function($scope) {
+    controller('BioController', function() {
+
+    }).
+    controller('ProjectsController', function() {
 
     });
