@@ -3,7 +3,7 @@
 /* Controllers */
 angular.module('myApp.controllers', []).
     controller('SiteController', function($scope) {
-        $scope.welcome = "Welcome to My Website!";
+        $scope.welcome = "JasonBerry.io";
         $scope.currentYear = (new Date()).getFullYear();
     }).
     controller('HomeController', function() {
