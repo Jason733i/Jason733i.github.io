@@ -1,0 +1,8 @@
+.jason-background {
+    background-image: url('../img/jason-background.jpg');
+}
+.profile-img {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
