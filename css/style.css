@@ -3,3 +3,7 @@
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
+
+.no-border {
+    border: none;
+}

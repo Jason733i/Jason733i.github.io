@@ -3,7 +3,7 @@
 <head>
     <title>Jason Berry - Agile Software Developer</title>
 
-    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/justified-nav.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
@@ -12,32 +12,40 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-route.min.js"></script>
 </head>
 <body>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#/" class="navbar-brand">{{welcome}}</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li ng-class="active('/')">
+                    <a href="#/">Welcome</a>
+                </li>
+                <li ng-class="active('/blog')">
+                    <a href="#/blog">Blog</a>
+                </li>
+                <li ng-class="active('/bio')">
+                    <a href="#/bio">Bio</a>
+                </li>
+                <li ng-class="active('/projects')">
+                    <a href="#/projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 <div class="container" ng-controller="SiteController">
-
-    <div class="masthead">
-        <h3 class="text-muted">{{welcome}}</h3>
-        <ul class="nav nav-justified">
-            <li ng-class="active('/')">
-                <a href="#/">Welcome</a>
-            </li>
-            <li ng-class="active('/blog')">
-                <a href="#/blog">Blog</a>
-            </li>
-            <li ng-class="active('/bio')">
-                <a href="#/bio">Bio</a>
-            </li>
-            <li ng-class="active('/projects')">
-                <a href="#/projects">Projects</a>
-            </li>
-        </ul>
-    </div>
-
-    <div ng-view></div>
-
+    <div class="row" ng-view></div>
+</div>
+<div class="container footer">
     <!-- Site footer -->
-    <div class="footer">
-        <p>&copy; Jason Berry 2013 - {{currentYear}}</p>
-    </div>
+    <p>&copy; Jason Berry 2013 - {{currentYear}}</p>
 </div>
 
 <!-- Include all AngularJS app files -->
