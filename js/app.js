@@ -15,7 +15,15 @@ angular.module('myApp', [
         $routeProvider.when('/projects', {templateUrl: 'partials/projects.html', controller: 'ProjectsController'});
         $routeProvider.otherwise({redirectTo: '/'});
     }).
-    run(function($rootScope) {
+    run(function($rootScope, $location) {
         $rootScope.currentYear = (new Date()).getFullYear();
         $rootScope.welcome = "JasonBerry.io";
+
+        $rootScope.active = function(path) {
+            if ($location.path() == path) {
+                return "active"
+            } else {
+                return ""
+            }
+        }
     });
