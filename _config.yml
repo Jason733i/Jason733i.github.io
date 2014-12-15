@@ -8,3 +8,4 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jasonberry.io" # the base hostname & protocol for your site
 twitter_username: Jason733i
 github_username:  Jason733i
+exclude: [CNAME, Gemfile, Gemfile.lock, LICENSE, README.md]
