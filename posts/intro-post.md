@@ -2,9 +2,9 @@
 layout: page
 title: The Beginning of a Journey
 permalink: /posts/intro-post.html
+author: Jason Berry
+date: December 15, 2014
 ---
-
-# The Beginning of a Journey
 
 Hello there!  My name is Jason Berry and I am a computer scientist working in the field of web application development.  What does this mean?  To recruiters, this means that I'm a full stack engineer, but to me it means that I take a problem facing people in the real world and solve it using whatever tools are necessary to get the job done.  
 
