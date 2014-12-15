@@ -2,18 +2,17 @@
 
 /* Controllers */
 angular.module('myApp.controllers', []).
-    controller('SiteController', function($scope) {
+    controller('SiteController', ['$scope', function($scope) {
 
-    }).
-    controller('HomeController', function() {
+    }]).
+    controller('HomeController', [function() {
 
-    }).
-    controller('BlogController', function() {
-
-    }).
-    controller('BioController', function() {
-
-    }).
-    controller('ProjectsController', function() {
-
-    });
+    }]).
+    controller('BlogController', ['$scope', '$routeParams', 'BlogPostService', function($scope, $routeParams, BlogPostService) {
+        $scope.blogPosts = BlogPostService.all();
+        $scope.blogPostUrl = '/posts/' + ($routeParams['id'] || 'intro-post') + '.html';
+    }]).
+    controller('ProjectsController', ['$scope', '$routeParams', 'ProjectService', function($scope, $routeParams, ProjectService) {
+        $scope.projects = ProjectService.all();
+        $scope.projectUrl = '/projects/' + ($routeParams['id'] || 'hay-okay') + '.html';
+    }]);

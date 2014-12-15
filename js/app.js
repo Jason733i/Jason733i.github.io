@@ -8,13 +8,13 @@ angular.module('myApp', [
         'myApp.directives',
         'myApp.controllers'
     ]).
-    config(function($routeProvider) {
+    config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/', {templateUrl: 'partials/home.html', controller: 'HomeController'});
-        $routeProvider.when('/blog', {templateUrl: 'partials/blog.html', controller: 'BlogController'});
-        $routeProvider.when('/projects', {templateUrl: 'partials/projects.html', controller: 'ProjectsController'});
+        $routeProvider.when('/posts/:id?', {templateUrl: 'partials/blog.html', controller: 'BlogController'});
+        $routeProvider.when('/projects/:id?', {templateUrl: 'partials/projects.html', controller: 'ProjectsController'});
         $routeProvider.otherwise({redirectTo: '/'});
-    }).
-    run(function($rootScope, $location) {
+    }]).
+    run(['$rootScope', '$location', function($rootScope, $location) {
         $rootScope.currentYear = (new Date()).getFullYear();
         $rootScope.welcome = "JasonBerry.io";
 
@@ -25,4 +25,4 @@ angular.module('myApp', [
                 return ""
             }
         }
-    });
+    }]);

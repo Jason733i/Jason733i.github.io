@@ -1,1 +1,11 @@
-I'm sorry, there are no projects to read about on this page right now...
+<div class="row">
+    <div class="col-lg-3 col-md-3">
+        <h2>Posts</h2>
+        <ul class="list-unstyled">
+            <li ng-repeat="project in projects">
+                <a href="#/projects/{{project.id}}">{{project.title}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-9 col-md-9" ng-include="projectUrl"></div>
+</div>
