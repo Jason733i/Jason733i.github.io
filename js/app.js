@@ -11,6 +11,7 @@ angular.module('myApp', [
     config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/', {templateUrl: 'partials/home.html', controller: 'HomeController'});
         $routeProvider.when('/posts/:id?', {templateUrl: 'partials/blog.html', controller: 'BlogController'});
+        $routeProvider.when('/posts/:id/:subId', {templateUrl: 'partials/blog.html', controller: 'SubBlogController'});
         $routeProvider.when('/projects/:id?', {templateUrl: 'partials/projects.html', controller: 'ProjectsController'});
         $routeProvider.otherwise({redirectTo: '/'});
     }]).

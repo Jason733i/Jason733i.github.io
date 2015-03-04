@@ -4,6 +4,11 @@
         <ul class="list-unstyled">
             <li ng-repeat="blogPost in blogPosts">
                 <a href="#/posts/{{blogPost.id}}">{{blogPost.title}}</a>
+                <ul ng-show="blogPost.subPosts">
+                    <li ng-repeat="subPost in blogPost.subPosts">
+                        <a href="#/posts/{{blogPost.id}}/{{subPost.subId}}">{{subPost.title}}</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>

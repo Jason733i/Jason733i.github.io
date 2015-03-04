@@ -13,6 +13,28 @@ angular.module('myApp.services', []).
                     {
                         'id': 'intro-post',
                         'title': 'The Beginning of a Journey'
+                    },
+                    {
+                        'id': 'learning-ev3',
+                        'title': 'Learning to Program Lego Mindstorms Ev3',
+                        'subPosts': [
+                            {
+                                'subId': 'motor-control',
+                                'title': 'Driving the motors'
+                            },
+                            {
+                                'subId': 'sensory-input',
+                                'title': 'Understanding Sensory Input'
+                            },
+                            {
+                                'subId': 'loop-control',
+                                'title': 'Loop Control'
+                            },
+                            {
+                                'subId': 'bluetooth-communication',
+                                'title': 'Bluetooth Communication'
+                            }
+                        ]
                     }
                 ]
             }
