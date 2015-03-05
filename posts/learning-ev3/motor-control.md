@@ -6,7 +6,7 @@ author: Jason Berry
 date: 2015-03-05
 ---
 
-This post will focus on the EV3 Large motor and how the included software can be used to control it.  My first impression of the large motor was, "Wow! That thing seems like it would be difficult to integrate into a robot."  I can assure you that I was wrong in my first impression.  Yes it is large, but it's almost a foundation to build off of.  The base robot is well constructed using these motors.
+This post will focus on the EV3 Large motor and how the included software can be used to control it.  My first impression of the large motor was, "Wow! That thing seems like it would be difficult to integrate into a robot."  I can assure you that I was wrong in my first impression.  Yes it is large, but it serves as a useful foundation for the rest of the robot.  The base robot is well constructed using these motors.
 
 ![EV3 Large Motor](https://a248.e.akamai.net/cache.lego.com/images/leshop/Products/45502/45502_350x350_1_xx-xx.jpg)
 
