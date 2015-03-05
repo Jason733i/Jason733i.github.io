@@ -16,16 +16,16 @@ Now that we're acquainted with the motor, let's dive into code...
 
 ![Drive one motor at half speed for one rotation](img/posts/learning-ev3/motor-control/single-motor-1-rotation.png)
 
-This is a basic program which will drive one of the robot's motors, causing it to turn in place.  Notice the play block (containing a green triangle) and the end block (containing the red square).  These blocks denote the start and end points of the program.  If you hit play and your robot is connected, then it will execute whatever blocks you have after the play block.
+This is a basic program which will drive one of the robot's motors, causing it to turn in place.  Notice the play block (containing a green triangle) and the end block (containing the red square).  These blocks denote the start and end points of the program.  If you click play and your robot is connected, then it will execute whatever blocks you have after the play block.
 
 ### The Single Motor Programming Block ###
 
 ![Single motor programming block](img/posts/learning-ev3/motor-control/single-motor-programming-block.png)
 
-You'll notice a few different symbols inside the single motor programming block:
+You'll notice a few symbols inside the single motor programming block:
 
-- The ![power](img/posts/learning-ev3/motor-control/power-symbol.png "power") symbol corresponds to the motor's speed or power.  The value can be adjusted between -100 to 100.  Any negative value puts the motor into reverse.  This will come in very handy for navigation and steering.
-- The ![rotation](img/posts/learning-ev3/motor-control/rotation-symbol.png "rotation") symbol corresponds to the number of full rotations of the motor.  If the motor is attached to a wheel, then this directly corresponds to distance that the robot will travel.  The motors have are several types of rotations that you can choose from.  They include:
+- The ![power](img/posts/learning-ev3/motor-control/power-symbol.png "power") symbol corresponds to the motor's speed or power.  The value can be adjusted between -100 to 100.  Any negative value puts the motor into reverse.  This will come in handy for navigation and steering.
+- The ![rotation](img/posts/learning-ev3/motor-control/rotation-symbol.png "rotation") symbol corresponds to the number of full rotations of the motor.  If the motor is attached to a wheel then this directly corresponds to distance that the robot will travel.  The motor block offers several types of rotation that you can choose from.  They include:
     - Off
     - On
     - On for seconds
